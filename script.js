@@ -41,3 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// MOVE TO TOP BUTTON
+const moveTopBtn = document.querySelector(".move-to-top-btn");
+const scrolled = 1000;
+window.addEventListener("scroll", () => {
+  if(scrollY > scrolled) {
+    moveTopBtn.classList.remove("move-to-top-btn-hidden");
+  } else {
+    moveTopBtn.classList.add("move-to-top-btn-hidden");
+  };
+});

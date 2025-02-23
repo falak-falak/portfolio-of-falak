@@ -5,6 +5,10 @@
   font-family: "poppins";
 }
 
+html {
+  scroll-behavior: smooth
+}
+
 ::selection {
   color: black;
   background-color: #00C0FF;
@@ -889,4 +893,32 @@ li p {
   color: #b4afc6;
   font-size: 1.3rem;
   text-align: center;
+}
+
+
+/* MOVE TO TOP BUTTON */
+.move-to-top-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  padding: 0 3px 0 0;
+  border-radius:  50%;
+  background-color: #00C0FF;
+}
+
+.move-to-top-btn a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  transform: rotate(-90deg);
+}
+
+.move-to-top-btn-hidden {
+  display: none;
 }
