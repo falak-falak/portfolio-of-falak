@@ -575,8 +575,11 @@ li p {
 
 .service-box .icon {
   position: relative;
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: #432d92;
 
@@ -589,21 +592,27 @@ li p {
   background-color: #00C0FF;
 }
 
-.service-box .icon .ser {
+.service-box .icon i {
+  color: white;
+  font-size: 35px;
+}
+
+/* .service-box .icon .ser {
   position: absolute;
   top: 0;
   left: 0;
   color: white;
-  font-size: 25px;
+  font-size: 35px;
 
-  transform: translate(-30px, -30px);
+  transform: translate(-20px, -20px);
   transition-property: transform;
   transition-duration: 100ms;
   transition-timing-function: ease-out;
-}
+} */
 
 .service-box:hover .icon .ser {
-  transform: translate(11px, 17px);
+  /* transform: translate(11px, 17px);
+  font-size: 25px; */
 }
 
 .service-box .h3 {
@@ -620,20 +629,7 @@ li p {
   text-align: center;
 }
 
-.service-box .icon i {
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  transition-property: position;
-  transition-duration: 1.5s;
-  transition-timing-function: ease-in;
-}
 
-.service-box .icon i:hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 /* RESUME SECTION */
 
