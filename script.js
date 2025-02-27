@@ -26,8 +26,8 @@ counts.forEach((counter) => {
       setTimeout(upData, 20);
     } else {
       counter.innerText = target;
-    };
-  };
+    }
+  }
   upData();
 });
 
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const progressBar = document.querySelectorAll(".progress");
   progressBar.forEach((bar) => {
     const percent = bar.getAttribute("data-percent");
-    bar.style.width = percent + "%" ;
+    bar.style.width = percent + "%";
     bar.innerText = percent + "%";
   });
 });
@@ -45,9 +45,30 @@ document.addEventListener("DOMContentLoaded", () => {
 const moveTopBtn = document.querySelector(".move-to-top-btn");
 const scrolled = 1000;
 window.addEventListener("scroll", () => {
-  if(scrollY > scrolled) {
+  if (scrollY > scrolled) {
     moveTopBtn.classList.remove("move-to-top-btn-hidden");
   } else {
     moveTopBtn.classList.add("move-to-top-btn-hidden");
+  }
+});
+
+// Hamburger Functionalities.
+const menuLinks = document.querySelector(".links");
+const navIcon = document.querySelector(".hamburger-div");
+const barIcon = document.querySelector(".fa-bars");
+const crossIcon = document.querySelector(".fa-xmark");
+
+let closedMenu = true;
+navIcon.addEventListener("click", () => {
+  if (closedMenu) {
+    menuLinks.classList.remove("hidden-links");
+    barIcon.classList.add("hidden-bar");
+    crossIcon.classList.remove("hidden-cross");
+    closedMenu = false;
+  } else {
+    menuLinks.classList.add("hidden-links");
+    barIcon.classList.remove("hidden-bar");
+    crossIcon.classList.add("hidden-cross");
+    closedMenu = true;
   };
 });
