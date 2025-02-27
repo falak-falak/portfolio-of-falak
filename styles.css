@@ -1262,7 +1262,7 @@ li p {
   }
 
   .experience .line, .education hr {
-    left: 32px;
+    display: none;
   }
 
   .testimonials {
