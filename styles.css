@@ -472,7 +472,7 @@ li p {
 
 .stats {
   width: 100%;
-  margin: 113px 0 113px 0;
+  margin: 313px 0 113px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1266,7 +1266,7 @@ li p {
   }
 
   .experience .line, .education hr {
-    left: 32px;
+    display: none;
   }
 
   .testimonials {
