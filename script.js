@@ -59,16 +59,17 @@ const navIcon = document.querySelector(".hamburger-div");
 const barIcon = document.querySelector(".fa-bars");
 const crossIcon = document.querySelector(".fa-xmark");
 
+
 let closedMenu = true;
 navIcon.addEventListener("click", () => {
   if (closedMenu) {
-    menuLinks.style.transform = "translateY(0px)";
+    menuLinks.style.transform = "translateX(0px)";
     // menuLinks.classList.remove("hidden-links");
     barIcon.classList.add("hidden-bar");
     crossIcon.classList.remove("hidden-cross");
     closedMenu = false;
   } else {
-    menuLinks.style.transform = "translateY(-500px)";
+    menuLinks.style.transform = "translateX(180px)";
     // menuLinks.classList.add("hidden-links");
     barIcon.classList.remove("hidden-bar");
     crossIcon.classList.add("hidden-cross");
