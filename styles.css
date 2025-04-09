@@ -59,7 +59,7 @@ html {
 
 /* NAV -> LOGO */
 .logo .logo-text {
-  font-family: "Open Sans", sans-serif; /* ERROR HERE */
+  user-select: none;
   font-size: 40px;
   transition-property: all;
   transition-duration: 0.4s;
@@ -522,13 +522,13 @@ li p {
 /* SKILLS SECTIONS */
 .skill-sec {
   margin: 113px 0 120px 0;
-  padding: 113px 0 50px 0;
+  padding: 0 0 50px 0;
 }
 
 .skills {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
@@ -585,9 +585,17 @@ li p {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  border-style: solid;
+  border-width: 0 0 3px 0;
+  border-color: #3a2b71;
   border-radius: 10px;
   background-color: #3a2b71;
   cursor: pointer;
+}
+.service-box:hover {
+  border-style: solid;
+  border-width: 0 0 3px 0;
+  border-color: #00c0ff;
 }
 
 .service-box .icon {
@@ -612,6 +620,14 @@ li p {
 .service-box .icon i {
   color: white;
   font-size: 35px;
+}
+
+.service-box a {
+  color: #00c0ff;
+  text-decoration: none;
+}
+.service-box a:hover {
+  text-decoration: underline;
 }
 
 /* .service-box .icon .ser {
