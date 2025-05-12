@@ -772,7 +772,7 @@ li p {
 .project-boxes {
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
@@ -830,7 +830,7 @@ li p {
 .testimonials {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
   padding: 20px 0 20px 0;
   margin: 50px 0 50px 0;
